@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>To-Do List</title>
-  <!-- This style block could have been added to a CSS file-->
+
+  <!--CSS Styling-->
   <style>
     body { font-family: Arial, sans-serif; padding: 2rem; max-width: 400px; margin: auto; }
     input { width: 100%; padding: 0.5rem; margin-bottom: 1rem; }
@@ -13,11 +14,15 @@
   </style>
 </head>
 
-<body>
+<body onload="startTime()">
+  <h1>To Do List</h1>
+  <h4 id="clock"> </h4> <br>
+
   <!--An input field to enter new tasks-->
   <input id="todoInput" placeholder="Add a new task..." />
    <!-- An empty unordered list wherto-do items will appear-->
   <ul id="todoList"></ul>
+
 
   <!-- SortableJS CDN to enable drag and drop-->
   <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
